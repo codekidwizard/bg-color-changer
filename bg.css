@@ -1,0 +1,58 @@
+:root{
+    --color: #333;
+}
+body{
+    background: var(--color);
+}
+span{
+    float: right;
+    line-height: 60px;
+    font-size: 30px;
+    margin-right: 40px;
+    cursor: pointer;
+    color: white;
+}
+span:hover{
+    color:#fff;
+    transition: 0.4s;
+}
+span:hover ul{
+    display: block;
+}
+ul{
+    background:transparent;
+    width: 100px;
+    position: relative;
+    right: 10px;
+    top: 100px;
+    border-radius: 0 0 10px 10px;
+    display: block;
+}
+.colors{
+    list-style: none;
+    width: 30px;
+    height: 30px;
+    margin: 17px auto;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+.colors:hover{
+    width: 40px;
+    height: 40px;
+}
+
+
+
+#red{
+    background:rgb(248, 156, 156);
+}
+#mixed{
+    background:lightskyblue;
+}
+#purple{
+    background: purple;
+}
+#green{
+    background: #01fe87 ;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bg color</title>
+    <link rel="stylesheet" href="bg.css">
+</head>
+<body>
+    <span>
+        <ul>
+            <li class="colors" id="green"data-color=" #01fe87"></li>
+            <li class="colors" id="red"data-color="rgb(248, 156, 156)"></li>
+            <li class="colors" id="purple"data-color="purple"></li>
+            <li class="colors" id="mixed"data-color="lightskyblue"></li>
+        </ul>
+    </span>
+    <script>
+                const colors = document.getElementsByClassName('colors')
+
+let i;
+for(i = 0;i<colors.length;i++){
+colors[i].addEventListener('click', changecolor)
+}
+
+function changecolor(){
+let color = this.getAttribute('data-color');
+document.documentElement.style.setProperty('--color',color)
+}
+    
+    </script>
+</body>
+</html>
